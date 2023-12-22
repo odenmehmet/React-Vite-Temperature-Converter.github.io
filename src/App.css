@@ -1,0 +1,87 @@
+/* App.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+}
+div {
+  width: 300px;
+  align-items: center;
+  margin: 20px;
+  margin: auto;
+  
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #444444;
+}
+h1 {
+  text-shadow: #da0a0a;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #db5b34;
+}
+
+.converter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+  
+}
+
+label {
+  margin-left: 12px;
+}
+
+input {
+  width: 200px;
+  
+  min-height: 30px;
+  border: 2px solid #db5b34;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px azure;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  font-size: 15px;
+}
+input:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+input:focus {
+  outline: none;
+  border: 1px solid #db5b34;
+}
+
+span {
+  margin-top: auto;
+  font-weight: bold;
+}
